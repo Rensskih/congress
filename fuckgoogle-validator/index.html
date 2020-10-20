@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>Migrating the fuckgoogle validator</title>
+<meta name="description" content="A peer-to-peer hypermedia protocol to make the web faster, safer, and more open." />
+<meta name="author" content="serejandmyself" />
+
+<link rel="canonical" href="../fuckgoogle-validator/" />
+<link rel="alternate" href="../fuckgoogle-validator/" hreflang="x-default">
+
+
+<meta property="og:type" content="website" />
+<meta property="og:description" content="A peer-to-peer hypermedia protocol to make the web faster, safer, and more open." />
+<meta property="og:title" content="Migrating the fuckgoogle validator" />
+<meta property="og:site_name" content="cyber~Congress" />
+<meta property="og:url" content="/fuckgoogle-validator/" />
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="//img/ipfs-logo-256-ice.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" contentlogo="146" />
+<meta property="og:image:height" content="166" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="cyber~Congress" />
+<meta name="twitter:title" content="Migrating the fuckgoogle validator" />
+<meta name="twitter:creator" content="serejandmyself" />
+<meta name="twitter:description" content="A peer-to-peer hypermedia protocol to make the web faster, safer, and more open." />
+<meta name="twitter:domain" content="https://cybercongress.ai" />
+<meta name="twitter:image:src" content="//img/ipfs-logo-256-ice.png" />
+
+<link rel="stylesheet" href="../css/main.css" />
+<link rel="stylesheet" href="../highlight/github-gist.css" />
+<link rel="stylesheet" href="../asciinema/asciinema-player.css" />
+
+<link rel="shortcut icon" href="../img/newlogo.png">
+<link rel="alternate feed" href="../index.xml" type="application/rss+xml" title="IPFS Blog" />
+
+<script src="../asciinema/asciinema-player.js"></script>
+<script src="../highlight/highlight.js"></script>
+
+<script type="text/javascript">
+    var baseurl = "\/";
+</script>
+
+
+<script>hljs.initHighlightingOnLoad()</script>
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-52930282-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+<body>
+  <header class="header-has-logo"  id="stars" >
+        <div class="container cf">
+          <h1 class="pull-left logo margin-bottom">
+            <a href="../" class="logo ipfs-logo transition transition-fadeout">cyber~Congress</a>
+            <a href="../"><span class='logo-text'>cyber~Congress</span></a>
+          </h1>
+          <nav role="navigation" class="pull-right top-nav top-nav-dark cf">
+            <input id="menu-toggle" type="checkbox" class="menu-toggle">
+            <label for="menu-toggle"></label>
+            <ul class="list-unstyled list-inline cf">
+              <li><a href="../docs/go-cyber/cyberd/"
+                  >Docs</a></li>
+              <li><a href="http://ai.cybercongress.ai/" >Forum</a></li>
+              <li><a href="../post" >Blog</a></li>
+            </ul>
+          </nav>
+         
+        </div>
+        <div class="view-more">
+          <label>View more</label><a href="#"></a>
+        </div>
+      </header>
+    
+
+  <div class="container">
+
+    
+
+
+    <div class="post">
+      <h1>Migrating the fuckgoogle validator</h1>
+      <p class="date">by serejandmyself on 2020-10-09</p>
+
+      <p>
+</p>
+
+      
+
+<h2 id="tl-dr">TL;DR</h2>
+
+<p>Last spring, members of the cyber~Congress team and Cyber&rsquo;s community decided to launch a Cosmos hub validator, &lsquo;fuckgoogle&rsquo;. The idea behind it was to promote Cybers word to the masses and to progress forward with no bullshit politics for the hub.</p>
+
+<p>Recently, Tendermint <a href="https://medium.com/tendermint/tendermint-re-delegated-19m-atoms-to-new-cosmos-hub-validators-3d91f42df7dc">announced a new round of delegations of ATOMs</a> and &lsquo;fuckgoogle&rsquo; was one of the receivers of such a delegation. The team behind the validator is thankful that its work for the Cosmos hub was recognized by Tendermint, however, after much consideration, we decided to shut down &lsquo;fuckgoogle. But the story doesn&rsquo;t end here and has a great twist to it.</p>
+
+<h2 id="the-migration-story">The migration story</h2>
+
+<p>One of the launching members of &lsquo;fuckgoogle&rsquo; and the ecosystem developer of cyber~Congress aka @serejandmyself has launched his own podcast last spring. The podcast is called <a href="https://www.citizencosmos.space/">Citizen Cosmos</a>. After some consideration and talks with the Tendrmint team, we have decided to fully pass the possession of the validator into the hands of Citizen Cosmos.</p>
+
+<p>cyber~Congress is the launching DAO behind Cybers superintelligent computer for answers, we have already built numerous projects within Cyber, such as our own version of a <a href="https://cyber.page/">decentralized Google</a> and a <a href="https://cyber.page/ipfs/QmUij9pSfQ4ZFTCtYGCo8NAGR49z57hkCwccqHfz5xSVTK">decentralized hardcore analogue to Twitter</a>. But that&rsquo;s far from our end goal. We see Cyber evolving into a great knowledge-specific hub within the larger Cosmos ecosystem, and although we are happy to help evolve the Cosmos ecosystem, alas, we do not personally agree with a lot of political decisions on the Cosmos hub itself.</p>
+
+<p>That doesn&rsquo;t mean we will stop developing Cosmos. Recently we have integrated with <a href="https://chrome.google.com/webstore/detail/keplr/dmkamcknogkgcdfhhbddcghachkejeap?hl=en">Keplr</a>, integrated <a href="https://www.cosmwasm.com/">CosmWasm</a>, took part in <a href="https://github.com/cosmosdevs/GameOfZones">GOZ</a>, and are working on numerous ideas that will help evolve the Cosmos ecosystem.</p>
+
+<p>With that said, we believe that our best bridge to Cosmos hub can be established via the Citizen Cosmos podcast. Their work has already been <a href="https://medium.com/@interchain_io/icf-q2-2020-funding-recipients-e5cbb326c23c">recognized by the ICF</a> and from other ecosystem projects, like IRIS-net, Bitsong, etc. We firmly believe that this decision will benefit both, our own ability to concentrate on building Cyber hub, and will benefit Cosmos hub, in the eyes of a new validator, that is supported by the ICF and the community.</p>
+
+<p>We wish @serenajdmyself good luck with the Citizen Cosmos validator and are in the midst of the migration. #fuckgoogle</p>
+
+
+      
+          <h2 id="comments">Comments</h2>
+          <div id='discourse-comments'></div>
+          <script type="text/javascript">
+            DiscourseEmbed = { discourseUrl: 'https://discuss.ipfs.io/',
+              discourseEmbedUrl: 'https://ipfs.io/blog/fuckgoogle-validator' };
+              if (window.location.hostname === 'blog.ipfs.io') {
+                (function() {
+                  var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+                  d.src = DiscourseEmbed.discourseUrl + 'javascripts/embed.js';
+                  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+                })();
+              } else {
+                 
+                 
+                 document.getElementById('comments').style.display = 'none';
+                 document.getElementById('discourse-comments').style.display = 'none';
+              }
+          </script>
+      
+    </div>
+  </div> 
+
+  <footer role="contentinfo" class="footer-primary">
+  <div class="container cf">
+    <div class="cf">
+      
+      <div class="share-links center">
+        <ul class="share list-unstyled">
+          
+          <li><a class="Cyber-page" target="_blank" href="https://cyber.page/">Cyber-page</a></li>
+          
+          <li><a class="Cyberd" target="_blank" href="https://cyberd.ai/">Cyberd</a></li>
+          
+          <li><a class="Cyb" target="_blank" href="https://cyb.ai/">Cyb</a></li>
+          
+          <li><a class="Aragon" target="_blank" href="https://mainnet.aragon.org/#/cybercongress/0x4feb2bcc5907e7779130c093eef8fb44502c1330">Aragon</a></li>
+          
+          <li><a class="Github" target="_blank" href="https://github.com/cybercongress">Github</a></li>
+          
+          <li><a class="Forum" target="_blank" href="https://ai.cybercongress.ai/">Forum</a></li>
+          
+          <li><a class="Twitter" target="_blank" href="https://twitter.com/cyber_devs">Twitter</a></li>
+          
+          <li><a class="Rss" target="_blank" href="https://cybercongress.ai/index.xml">Rss</a></li>
+          
+          <li><a class="Telegram" target="_blank" href="https://t.me/fuckgoogle">Telegram</a></li>
+          
+        </ul>
+      </div>
+    </div>
+    <p class="footer-copyright center">© Cyber License. Don’t believe, don’t fear, don’t ask.</p>
+  </div>
+</footer>
+
+
+
+</body>
+</html>
